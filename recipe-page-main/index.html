@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Frontend Mentor | Recipe page</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							YoungSerif: ['"Young Serif"', 'sans-serif'],
+							Outfit: ['Outfit', 'sans-serif'],
+						},
+						colors: {
+							'stone-100': 'hsl(30, 54%, 90%)',
+							'stone-150': 'hsl(30, 18%, 87%)',
+							'stone-600': 'hsl(30, 10%, 34%)',
+							'stone-900': 'hsl(24, 5%, 18%)',
+							'brown-800': 'hsl(14, 45%, 36%)',
+							'rose-50': 'hsl(330, 100%, 98%)',
+							'rose-800': 'hsl(332, 51%, 32%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-[#f3e7d8] md:my-[7.6875rem]">
+		<div class="bg-white min-w-mobile max-w-[736px] font-Outfit mx-auto md:p-[2.5rem] md:rounded-[1.25rem]">
+			<!-- top image -->
+			<img
+				src="./assets/images/image-omelette.jpeg"
+				alt="Simple Omelette Recipe"
+				class="min-h-[10.6875rem] max-h-[18.75rem] w-full object-cover md:rounded-[.625rem]"
+			/>
+
+			<!-- container -->
+			<div class="px-[2rem] py-[1.75rem] md:px-0">
+				<!-- header -->
+				<header>
+					<h1 class="text-4xl font-YoungSerif mb-[1.25rem]">Simple Omelette Recipe</h1>
+					<p class="text-stone-600">
+						An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+						to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+					</p>
+				</header>
+
+				<!-- Preparation time -->
+				<div class="my-[2rem] bg-rose-50 rounded-[.625rem] pt-[1.25rem] pr-[4.5rem] pb-[1.5rem] pl-[1.5rem]">
+					<p class="font-semibold text-rose-800 text-xl pb-[1.0625rem] leading-none">Preparation time</p>
+					<ul class="flex flex-col gap-[.8125rem] text-stone-600">
+						<li
+							class="pl-[1.5rem] relative before:content-['·'] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[.375rem] before:text-2xl before:text-rose-800"
+						>
+							<span class="font-bold text-stone-900">Total:</span> Approximately 10 minutes
+						</li>
+						<li
+							class="pl-[1.5rem] relative before:content-['·'] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[.375rem] before:text-2xl before:text-rose-800"
+						>
+							<span class="font-bold text-stone-900">Preparation:</span> 5 minutes
+						</li>
+						<li
+							class="pl-[1.5rem] relative before:content-['·'] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[.375rem] before:text-2xl before:text-rose-800"
+						>
+							<span class="font-bold text-stone-900">Cooking:</span> 5 minutes
+						</li>
+					</ul>
+				</div>
+
+				<!-- Ingredients -->
+				<div>
+					<h2 class="text-[1.75rem] leading-none font-YoungSerif text-brown-800 mb-[1.375rem]">
+						Ingredients
+					</h2>
+					<ul class="pr-[2.3125rem] text-stone-600 flex flex-col gap-[.625rem]">
+						<li
+							class="relative pl-[2.3125rem] before:content-['·'] before:text-brown-800 before:text-2xl before:left-[.375rem] before:top-1/2 before:-translate-y-1/2 before:absolute"
+						>
+							2-3 large eggs
+						</li>
+						<li
+							class="relative pl-[2.3125rem] before:content-['·'] before:text-brown-800 before:text-2xl before:left-[.375rem] before:top-1/2 before:-translate-y-1/2 before:absolute"
+						>
+							Salt, to taste
+						</li>
+						<li
+							class="relative pl-[2.3125rem] before:content-['·'] before:text-brown-800 before:text-2xl before:left-[.375rem] before:top-1/2 before:-translate-y-1/2 before:absolute"
+						>
+							Pepper, to taste
+						</li>
+						<li
+							class="relative pl-[2.3125rem] before:content-['·'] before:text-brown-800 before:text-2xl before:left-[.375rem] before:top-1/2 before:-translate-y-1/2 before:absolute"
+						>
+							1 tablespoon of butter or oil
+						</li>
+						<li
+							class="relative pl-[2.3125rem] before:content-['·'] before:text-brown-800 before:text-2xl before:left-[.375rem] before:top-1/2 before:-translate-y-1/2 before:absolute"
+						>
+							Optional fillings: cheese, diced vegetables, cooked meats, herbs
+						</li>
+					</ul>
+				</div>
+
+				<!-- line -->
+				<div class="my-[2rem] border-t border-stone-150"></div>
+
+				<!-- Instructions -->
+				<div>
+					<h2 class="text-[1.75rem] leading-none font-YoungSerif text-brown-800 mb-[1.375rem]">
+						Instructions
+					</h2>
+					<ol class="list-decimal marker:text-brown-800 flex flex-col gap-[.625rem] pl-[1.5625rem]">
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Beat the eggs:</span> In a bowl, beat the eggs
+							with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water
+							or milk for a fluffier texture.
+						</li>
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Heat the pan:</span> Place a non-stick frying pan
+							over medium heat and add butter or oil.
+						</li>
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Cook the omelette:</span> Once the butter is
+							melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
+							surface.
+						</li>
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Add fillings (optional):</span> When the eggs
+							begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen
+							fillings over one half of the omelette.
+						</li>
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Fold and serve:</span> As the omelette continues
+							to cook, carefully lift one edge and fold it over the fillings. Let it cook for another
+							minute, then slide it onto a plate.
+						</li>
+						<li class="pl-[.9375rem] leading-7 text-stone-600">
+							<span class="text-stone-900 font-semibold">Enjoy:</span> Serve hot, with additional salt and
+							pepper if needed.
+						</li>
+					</ol>
+				</div>
+
+				<!-- line -->
+				<div class="my-[2rem] border-t border-stone-150"></div>
+
+				<!-- Nutrition -->
+				<div>
+					<h2 class="text-[1.75rem] leading-none font-YoungSerif text-brown-800 mb-[1.375rem]">Nutrition</h2>
+					<p class="text-stone-600 mb-[1.25rem]">
+						The table below shows nutritional values per serving without the additional fillings.
+					</p>
+					<ul class="text-stone-600">
+						<li class="py-[.75rem] pl-[1.875rem] border-b border-stone-150 grid grid-cols-2 items-center">
+							<span>Calories</span>
+							<span class="text-brown-800 font-semibold">277kcal</span>
+						</li>
+						<li class="py-[.75rem] pl-[1.875rem] border-b border-stone-150 grid grid-cols-2 items-center">
+							<span>Carbs</span>
+							<span class="text-brown-800 font-semibold">0g</span>
+						</li>
+						<li class="py-[.75rem] pl-[1.875rem] border-b border-stone-150 grid grid-cols-2 items-center">
+							<span>Protein</span>
+							<span class="text-brown-800 font-semibold">20g</span>
+						</li>
+						<li class="py-[.75rem] pl-[1.875rem] grid grid-cols-2 items-center">
+							<span>Fat</span>
+							<span class="text-brown-800 font-semibold">22g</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
