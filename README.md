@@ -10,4 +10,4 @@
 
 ## Check List
 
--   [x] Recipe page solution
+-   [x] Recipe page solution [project link](https://recipe-page-dun-two.vercel.app/)
