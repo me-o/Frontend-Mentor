@@ -10,4 +10,5 @@
 
 ## Check List
 
--   [x] Recipe page solution [project link](https://recipe-page-dun-two.vercel.app/)
+-   [x] Recipe-page [link](recipe-page-dun-two.vercel.app)
+-   [x] social-links-profile
