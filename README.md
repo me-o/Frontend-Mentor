@@ -12,3 +12,4 @@
 
 -   [x] Recipe-page [link](https://recipe-page-dun-two.vercel.app)
 -   [x] social-links-profile [link](https://social-links-profile-tau-eight.vercel.app)
+-   [x] blog-preview-card-main [link]()
