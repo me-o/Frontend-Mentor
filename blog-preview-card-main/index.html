@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Blog preview card</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Figtree: ['Figtree', 'sans-serif'],
+						},
+						colors: {
+							Yellow: 'hsl(47, 88%, 63%)',
+							White: 'hsl(0, 0%, 100%)',
+							'Grey-500': 'hsl(0, 0%, 42%)',
+							'Grey-950': 'hsl(0, 0%, 7%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						dropShadow: {
+							card: '8px 8px 0 hsl(0, 0%, 7%)',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-Yellow flex items-center justify-center h-screen font-Figtree text-Grey-950 font-medium">
+		<div
+			class="bg-white p-[1.5rem] rounded-[1.25rem] space-y-[1.5rem] drop-shadow-card mx-[1.5rem] mobile:max-w-[24rem] sm:mx-auto"
+		>
+			<!-- blog img -->
+			<div class="rounded-[.625rem] overflow-hidden h-[12.5rem]">
+				<img
+					src="./assets/images/illustration-article.svg"
+					alt="Blog Image"
+					class="object-cover w-full h-full"
+				/>
+			</div>
+
+			<!-- content -->
+			<div class="space-y-3">
+				<!-- button -->
+				<button class="bg-Yellow rounded py-1 px-3 text-[.75rem] font-extrabold">Learning</button>
+
+				<!-- date -->
+				<div class="text-[.75rem]">Published 21 Dec 2023</div>
+
+				<!-- title -->
+				<h2
+					class="text-[1.25rem] font-extrabold hover:cursor-pointer hover:text-Yellow transition-all duration-300"
+				>
+					HTML & CSS foundations
+				</h2>
+
+				<!-- p -->
+				<p class="text-Grey-500 text-[.875rem]">
+					These languages are the backbone of every website, defining structure, content, and presentation.
+				</p>
+			</div>
+
+			<!-- author -->
+			<div class="flex items-center gap-3">
+				<div class="w-8 aspect-square rounded-full overflow-hidden">
+					<img src="./assets/images/image-avatar.webp" alt="Greg Hooper" class="object-cover w-full h-full" />
+				</div>
+
+				<div class="">Greg Hooper</div>
+			</div>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
