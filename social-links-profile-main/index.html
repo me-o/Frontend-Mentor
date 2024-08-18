@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Social links profile</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Inter: ['Inter', 'sans-serif'],
+						},
+						colors: {
+							Green: 'hsl(75, 94%, 57%)',
+							White: 'hsl(0, 0%, 100%)',
+							'Grey-700': 'hsl(0, 0%, 20%)',
+							'Grey-800': 'hsl(0, 0%, 12%)',
+							'Grey-900': 'hsl(0, 0%, 8%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="text-sm bg-Grey-900 text-White font-Inter h-screen flex items-center justify-center">
+		<div
+			class="mx-6 w-full bg-Grey-800 p-6 rounded-lg flex flex-col justify-center items-center max-w-[24.0625rem] desktop:p-[2.6rem] desktop:pt-[2.4rem]"
+		>
+			<!-- avatar -->
+			<div class="w-[5.6rem] aspect-square rounded-full overflow-hidden">
+				<img src="./assets/images/avatar-jessica.jpeg" alt="avatar" class="object-cover" />
+			</div>
+
+			<!-- introduction -->
+			<div class="w-full text-center mt-[1.8rem] mb-[1.5rem]">
+				<div class="font-bold text-[1.4375rem]">Jessica Randall</div>
+				<div class="mb-[1.8rem] mt-[0.8rem] font-semibold text-Green">London, United Kingdom</div>
+				<div class="">"Front-end developer and avid reader."</div>
+			</div>
+
+			<!-- buttons -->
+			<ul class="w-full gap-4 space-y-4">
+				<li class="rounded-lg overflow-hidden group">
+					<button
+						class="bg-Grey-700 w-full py-[0.8rem] group-hover:bg-Green group-hover:text-Grey-900 font-semibold transition-all duration-300"
+					>
+						GitHub
+					</button>
+				</li>
+				<li class="rounded-lg overflow-hidden group">
+					<button
+						class="bg-Grey-700 w-full py-[0.8rem] group-hover:bg-Green group-hover:text-Grey-900 font-semibold transition-all duration-300"
+					>
+						Frontend Mentor
+					</button>
+				</li>
+				<li class="rounded-lg overflow-hidden group">
+					<button
+						class="bg-Grey-700 w-full py-[0.8rem] group-hover:bg-Green group-hover:text-Grey-900 font-semibold transition-all duration-300"
+					>
+						LinkedIn
+					</button>
+				</li>
+				<li class="rounded-lg overflow-hidden group">
+					<button
+						class="bg-Grey-700 w-full py-[0.8rem] group-hover:bg-Green group-hover:text-Grey-900 font-semibold transition-all duration-300"
+					>
+						Twitter
+					</button>
+				</li>
+				<li class="rounded-lg overflow-hidden group">
+					<button
+						class="bg-Grey-700 w-full py-[0.8rem] group-hover:bg-Green group-hover:text-Grey-900 font-semibold transition-all duration-300"
+					>
+						Instagram
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
