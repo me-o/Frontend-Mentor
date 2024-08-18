@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Figtree */
+	@font-face {
+		font-family: 'Figtree';
+		font-style: normal;
+		font-weight: 500;
+		src: url('./assets/fonts/static/Figtree-SemiBold.ttf');
+	}
+
+	@font-face {
+		font-family: 'Figtree';
+		font-style: normal;
+		font-weight: 800;
+		src: url('./assets/fonts/static/Figtree-ExtraBold.ttf');
+	}
+}
