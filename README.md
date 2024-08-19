@@ -14,3 +14,4 @@
 -   [x] [social-links-profile](https://social-links-profile-tau-eight.vercel.app)
 -   [x] [blog-preview-card-main](https://blog-preview-card-nine-alpha.vercel.app)
 -   [x] [faq-accordion-main](https://faq-accordion-main-lilac.vercel.app/)
+-   [x] [results-summary-component-main]
