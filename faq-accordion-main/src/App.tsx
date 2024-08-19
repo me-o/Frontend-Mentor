@@ -29,6 +29,15 @@ const faqs = [
 function App() {
 	const [activeIndex, setActiveIndex] = useState(0);
 
+	const handleClick = (index: number) => {
+		if (index === activeIndex) {
+			setActiveIndex(-1);
+			return;
+		}
+
+		setActiveIndex(index);
+	};
+
 	return (
 		<>
 			{/* top background */}
@@ -50,7 +59,7 @@ function App() {
 								activeIndex === index && ' space-y-[1.375rem] sm:space-y-[1.875rem]'
 							)}
 							key={index}
-							onClick={() => setActiveIndex(index)}
+							onClick={() => handleClick(index)}
 						>
 							{/* question */}
 							<div className=" flex items-center gap-[2.5rem] sm:gap-[1.875rem]">
