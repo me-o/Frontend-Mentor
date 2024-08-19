@@ -10,10 +10,10 @@ const Title = ({ title }: PropsType) => {
 
 	return (
 		<h1 className=" flex items-center gap-[1.375rem] sm:gap-[1.875rem]">
-			<div className=" w-[1.5625rem] sm:w-[2.3125rem]">
+			<div className=" w-[1.5625rem] sm:w-[2.625rem]">
 				<img src={starImage} alt="" />
 			</div>
-			<div className=" font-bold text-3xl sm:text-[46px]">{title || defaultTitle}</div>
+			<div className=" font-bold text-3xl sm:text-[3.125rem]">{title || defaultTitle}</div>
 		</h1>
 	);
 };

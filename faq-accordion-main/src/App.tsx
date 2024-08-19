@@ -53,7 +53,7 @@ function App() {
 							onClick={() => setActiveIndex(index)}
 						>
 							{/* question */}
-							<div className=" flex items-center gap-[2.5rem] sm:gap-[1.875rem] ">
+							<div className=" flex items-center gap-[2.5rem] sm:gap-[1.875rem]">
 								<div className=" font-semibold leading-5 flex-grow text-[.9375rem] group-hover:text-purple-500 sm:text-lg">
 									{item.question}
 								</div>
