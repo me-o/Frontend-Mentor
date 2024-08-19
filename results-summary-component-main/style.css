@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Hanken Grotesk */
+	@font-face {
+		font-family: 'Hanken Grotesk';
+		font-style: normal;
+		font-weight: 500;
+		src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf');
+	}
+
+	@font-face {
+		font-family: 'Hanken Grotesk';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf');
+	}
+
+	@font-face {
+		font-family: 'Hanken Grotesk';
+		font-style: normal;
+		font-weight: 800;
+		src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+	}
+}
