@@ -15,3 +15,4 @@
 -   [x] [blog-preview-card-main](https://blog-preview-card-nine-alpha.vercel.app)
 -   [x] [faq-accordion-main](https://faq-accordion-main-lilac.vercel.app/)
 -   [x] [results-summary-component-main](https://results-summary-component-main-teal-one.vercel.app)
+-   [x] [product-preview-card-component-main](https://product-preview-card-component-main-gamma-cyan.vercel.app)
