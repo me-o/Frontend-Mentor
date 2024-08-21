@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>QR code component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Outfit: ['Outfit', 'sans-serif'],
+						},
+						colors: {
+							'Slate-300': 'hsl(212, 45%, 89%)',
+							'Slate-500': 'hsl(216, 15%, 48%)',
+							'Slate-900': 'hsl(218, 44%, 22%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="text-[.9375rem] font-Outfit grid place-content-center bg-Slate-300 min-h-screen">
+		<main class="max-w-[20rem] p-4 pb-10 bg-white mx-auto rounded-[1.25rem]">
+			<!-- qrCode -->
+			<div class="rounded-[.625rem] overflow-hidden">
+				<img src="./assets/images/image-qr-code.png" alt="" />
+			</div>
+
+			<div class="mt-6 text-center px-4 space-y-4">
+				<!-- title -->
+				<h1 class="font-bold text-Slate-900 text-[1.375rem] leading-[120%]">
+					Improve your front-end skills by building projects
+				</h1>
+
+				<!-- content -->
+				<p class="text-Slate-500 leading-[140%] tracking-[.0125rem]">
+					Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+				</p>
+			</div>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
