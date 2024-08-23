@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Red Hat Display */
+	@font-face {
+		font-family: 'Red Hat Display';
+		font-style: normal;
+		font-weight: 500;
+		src: url('./assets/fonts/Red_Hat_Display/static/RedHatDisplay-Medium.ttf');
+	}
+
+	@font-face {
+		font-family: 'Red Hat Display';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/Red_Hat_Display/static/RedHatDisplay-Bold.ttf');
+	}
+
+	@font-face {
+		font-family: 'Outfit';
+		font-style: Red Hat Display;
+		font-weight: 900;
+		src: url('./assets/fonts/Red_Hat_Display/static/RedHatDisplay-Black.ttf');
+	}
+}
