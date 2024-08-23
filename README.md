@@ -18,4 +18,5 @@
 -   [x] [product-preview-card-component-main](https://product-preview-card-component-main-gamma-cyan.vercel.app)
 -   [x] [interactive-rating-component-main](https://interactive-rating-component-main-psi-khaki.vercel.app)
 -   [x] [qr-code-component-main](https://qr-code-component-main-delta-opal.vercel.app)
--   [x] [nft-preview-card-component-main]()
+-   [x] [nft-preview-card-component-main](https://frontend-mentor-hazel-nine.vercel.app)
+-   [x] [order-summary-component-main]()
