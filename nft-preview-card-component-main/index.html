@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>NFT preview card component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Outfit: ['Outfit', 'sans-serif'],
+						},
+						colors: {
+							'Soft-blue': 'hsl(215, 51%, 70%)',
+							Cyan: 'hsl(178, 100%, 50%)',
+							'main-blue': 'hsl(217, 54%, 11%)',
+							'card-blue': 'hsl(216, 50%, 16%)',
+							'line-blue': 'hsl(215, 32%, 27%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="min-h-screen grid place-content-center bg-main-blue text-[1.125rem] font-Outfit">
+		<main
+			class="bg-card-blue max-w-[20.4375rem] p-6 pb-5 rounded-[.625rem] sm:max-w-[21.875rem] sm:pb-7 drop-shadow-2xl"
+		>
+			<!-- image -->
+			<div
+				class="max-h-[17.375rem] object-cover rounded-md overflow-hidden mb-[1.5625rem] sm:max-h-[18.875rem] relative group hover:cursor-pointer"
+			>
+				<!-- goods -->
+				<img src="./assets/images/image-equilibrium.jpg" alt="equilibrium" />
+
+				<!-- mask -->
+				<div
+					class="w-full h-full absolute top-0 bg-Cyan/50 grid place-content-center opacity-0 transition-all duration-300 group-hover:opacity-100"
+				>
+					<img src="./assets/images/icon-view.svg" alt="viewIcon" />
+				</div>
+			</div>
+
+			<!-- title -->
+			<h1
+				class="font-semibold text-white mb-[.875rem] text-[1.375rem] hover:text-Cyan hover:cursor-pointer transition-all duration-300"
+			>
+				Equilibrium #3429
+			</h1>
+
+			<!-- content -->
+			<p class="mb-[.8125rem] font-light text-Soft-blue text-[1rem] leading-7 sm:mb-[1.625rem] tracking-wider">
+				Our Equilibrium collection promotes balance and calm.
+			</p>
+
+			<!-- data -->
+			<div class="flex items-center justify-between text-[.875rem] sm:text-[1rem]">
+				<!-- price -->
+				<div class="flex items-center gap-2">
+					<img src="./assets/images/icon-ethereum.svg" alt="ethereum" />
+					<div class="text-Cyan font-semibold">0.041 ETH</div>
+				</div>
+
+				<!-- time -->
+				<div class="flex items-center gap-2">
+					<img src="./assets/images/icon-clock.svg" alt="ethereum" />
+					<div class="text-Soft-blue font-thin">3 days left</div>
+				</div>
+			</div>
+
+			<!-- line -->
+			<div class="border-t border-line-blue my-[.75rem] sm:mt-[1.375rem] sm:mb-4"></div>
+
+			<!-- avatar -->
+			<div class="flex items-center gap-4 group hover:cursor-pointer">
+				<div class="w-[2.0625rem] aspect-square overflow-hidden object-cover">
+					<img src="./assets/images/image-avatar.png" alt="" class="border-2 rounded-full" />
+				</div>
+
+				<!--  -->
+				<div class="text-[1rem] text-white">
+					<span class="text-Soft-blue">Creation of </span>
+					<span class="group-hover:text-Cyan transition-all duration-300">Jules Wyvern</span>
+				</div>
+			</div>
+		</main>
+
+		<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+	</body>
+</html>
