@@ -22,3 +22,4 @@
 -   [x] [order-summary-component-main](https://order-summary-component-main-kappa-two.vercel.app)
 -   [x] [stats-preview-card-component-main](https://stats-preview-card-component-main-inky.vercel.app)
 -   [x] [3-column-preview-card-component-main](https://3-column-preview-card-component-main-eta-seven.vercel.app)
+-   [x] [profile-card-component-main]()
