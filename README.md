@@ -20,4 +20,5 @@
 -   [x] [qr-code-component-main](https://qr-code-component-main-delta-opal.vercel.app)
 -   [x] [nft-preview-card-component-main](https://frontend-mentor-hazel-nine.vercel.app)
 -   [x] [order-summary-component-main](https://order-summary-component-main-kappa-two.vercel.app)
--   [x] [stats-preview-card-component-main]()
+-   [x] [stats-preview-card-component-main](https://stats-preview-card-component-main-inky.vercel.app)
+-   [x] [3-column-preview-card-component-main]()
