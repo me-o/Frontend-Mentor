@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Stats preview card component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Inter: ['Inter', 'sans-serif'],
+							LexendDeca: ['"Lexend Deca"', 'sans-serif'],
+						},
+						colors: {
+							VeryDarkBlue: 'hsl(233, 47%, 7%)',
+							DarkDesaturatedBlue: 'hsl(244, 38%, 16%)',
+							SoftViolet: 'hsl(277, 64%, 61%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="min-h-screen grid place-content-center font-Inter bg-VeryDarkBlue text-white">
+		<main
+			class="bg-DarkDesaturatedBlue rounded-lg max-w-[20.4375rem] overflow-hidden lg:flex lg:flex-row-reverse lg:max-w-[68.75rem] lg:mx-10"
+		>
+			<header>
+				<div
+					class="max-h-[15rem] overflow-hidden relative after:w-full after:h-full after:bg-SoftViolet/50 after:absolute after:top-0 contrast-150 hue-rotate-[6deg] lg:w-[33.75rem] lg:max-h-[unset] h-full w-full"
+				>
+					<img
+						src="./assets/images/image-header-mobile.jpg"
+						alt=""
+						class="lg:hidden w-full h-full object-cover"
+					/>
+					<img
+						src="./assets/images/image-header-desktop.jpg"
+						alt=""
+						class="hidden lg:block w-full h-full object-cover"
+					/>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div
+				class="p-[2.125rem] pt-[2.5rem] text-center lg:text-start lg:pt-[4.75rem] lg:pr-[5.625rem] lg:pb-[3.875rem] lg:pl-[4.25rem]"
+			>
+				<h1
+					class="font-LexendDeca font-bold text-[1.625rem] leading-8 mb-[1rem] lg:text-[36px] lg:leading-tight lg:mb-6"
+				>
+					Get <span class="text-SoftViolet">insights</span> that help your business grow.
+				</h1>
+
+				<p class="text-white/75 text-[.9375rem] mb-[2.5rem] leading-7 lg:mb-[4.625rem] lg:mr-[2.8125rem]">
+					Discover the benefits of data analytics and make better decisions regarding revenue, customer
+					experience, and overall efficiency.
+				</p>
+
+				<ul class="flex flex-col gap-[1.625rem] lg:flex-row lg:justify-between lg:mr-[2.8125rem]">
+					<li class="space-y-[.4375rem]">
+						<div class="text-[24px] tracking-wider font-bold">10k+</div>
+						<div class="uppercase text-white/60 text-[12px] font-Inter tracking-widest">companies</div>
+					</li>
+					<li class="space-y-[.4375rem]">
+						<div class="text-[24px] tracking-wider font-bold">314</div>
+						<div class="uppercase text-white/60 text-[12px] font-Inter tracking-widest">templates</div>
+					</li>
+					<li class="space-y-[.4375rem]">
+						<div class="text-[24px] tracking-wider uppercase font-bold">12m+</div>
+						<div class="uppercase text-white/60 text-[12px] font-Inter tracking-widest">queries</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
