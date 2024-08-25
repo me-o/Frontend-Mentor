@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Big Shoulders Display */
+	@font-face {
+		font-family: 'Big Shoulders Display';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/Big_Shoulders_Display/static/BigShouldersDisplay-Bold.ttf');
+	}
+
+	/* Lexend Deca */
+	@font-face {
+		font-family: 'Lexend Deca';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf');
+	}
+}
