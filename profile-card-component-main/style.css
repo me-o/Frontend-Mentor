@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Kumbh Sans */
+	@font-face {
+		font-family: 'Kumbh Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Kumbh Sans';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/Kumbh_Sans/static/KumbhSans-Bold.ttf');
+	}
+}

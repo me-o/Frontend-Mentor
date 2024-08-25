@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Profile card component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							KumbhSans: ['"Kumbh Sans"', 'sans-serif'],
+						},
+						colors: {
+							DarkCyan: 'hsl(185, 75%, 39%)',
+							VeryDarkDesaturatedBlue: 'hsl(229, 23%, 23%)',
+							DarkGrayishBlue: 'hsl(227, 10%, 46%)',
+							DarkGray: 'hsl(0, 0%, 59%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+
+	<body class="min-h-screen bg-DarkCyan font-KumbhSans text-VeryDarkDesaturatedBlue">
+		<main class="relative h-screen w-screen overflow-hidden grid place-content-center">
+			<!-- background -->
+			<!-- <section class="absolute top-0 left-0 w-full h-full border-2"> -->
+			<div
+				class="absolute top-0 left-0 w-[37.5rem] -z-10 -translate-y-[60%] -translate-x-[65%] sm:-translate-y-[55%] sm:-translate-x-[50%] sm:w-full"
+			>
+				<img src="./assets/images/bg-pattern-top.svg" alt="" class="w-full object-cover" />
+			</div>
+
+			<div
+				class="absolute bottom-0 right-0 w-[37.5rem] -z-10 translate-y-[50%] translate-x-[65%] sm:w-full sm:translate-x-[44%] sm:translate-y-[64%]"
+			>
+				<img src="./assets/images/bg-pattern-bottom.svg" alt="" class="w-full object-cover" />
+			</div>
+			<!-- </section> -->
+
+			<div class="max-w-[20.375rem] rounded-xl overflow-hidden bg-white drop-shadow-md sm:max-w-[21.875rem]">
+				<header>
+					<div class="sm:h-[8.75rem]">
+						<img src="./assets/images/bg-pattern-card.svg" alt="" />
+					</div>
+				</header>
+
+				<div class="relative">
+					<!-- avatar image -->
+					<div
+						class="ring-[.3125rem] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] rounded-full overflow-hidden ring-white"
+					>
+						<img src="./assets/images/image-victor.jpg" alt="Victor Crest" />
+					</div>
+
+					<!--  -->
+					<div class="text-center pt-[4.625rem] pb-[1.625rem]">
+						<h1 class="mb-[.75rem] leading-none font-bold text-[18px]">
+							Victor Crest
+							<span class="font-normal ml-2 text-DarkGrayishBlue">26</span>
+						</h1>
+
+						<div class="text-DarkGray text-[.875rem]">London</div>
+					</div>
+
+					<!-- line -->
+					<div class="border-t"></div>
+
+					<!--  -->
+					<ul
+						class="text-center grid place-content-center h-[5.5rem] px-[1.25rem] grid-flow-col auto-cols-fr"
+					>
+						<li class="">
+							<div class="font-bold text-[1.125rem]">80K</div>
+							<div class="text-[12px] text-DarkGray tracking-widest">Followers</div>
+						</li>
+						<li class="">
+							<div class="font-bold text-[1.125rem]">803K</div>
+							<div class="text-[12px] text-DarkGray tracking-widest">Likes</div>
+						</li>
+						<li class="">
+							<div class="font-bold text-[1.125rem]">1.4K</div>
+							<div class="text-[12px] text-DarkGray tracking-widest">Photos</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
