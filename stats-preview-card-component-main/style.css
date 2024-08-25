@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Inter */
+	@font-face {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Inter/static/Inter-Regular.ttf');
+	}
+
+	/* Lexend Deca */
+	@font-face {
+		font-family: 'Lexend Deca';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Lexend Deca';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/Lexend_Deca/static/LexendDeca-Bold.ttf');
+	}
+}
