@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Social proof section</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							LeagueSpartan: ['"League Spartan"', 'sans-serif'],
+						},
+						colors: {
+							VeryDarkMagenta: 'hsl(300, 43%, 22%)',
+							SoftPink: 'hsl(333, 80%, 67%)',
+							DarkGrayishMagenta: 'hsl(303, 10%, 53%)',
+							LightGrayishMagenta: 'hsl(300, 24%, 96%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="font-LeagueSpartan text-[.9375rem]">
+		<!-- bg -->
+		<div class="2xl:hidden">
+			<!-- mobile -->
+			<div class="absolute -top-2 left-0 -z-10 lg:hidden">
+				<img src="./assets/images/bg-pattern-top-mobile.svg" alt="" />
+			</div>
+			<div class="absolute bottom-0 right-0 -z-10 w-full lg:hidden">
+				<img src="./assets/images/bg-pattern-bottom-mobile.svg" alt="" />
+			</div>
+
+			<!-- desktop -->
+			<div class="absolute top-0 left-0 -z-10 hidden lg:block">
+				<img src="./assets/images/bg-pattern-top-desktop.svg" alt="" />
+			</div>
+			<div class="absolute bottom-0 right-0 -z-10 hidden lg:block">
+				<img src="./assets/images/bg-pattern-bottom-desktop.svg" alt="" />
+			</div>
+		</div>
+
+		<main
+			class="min-h-screen px-6 pt-[4.625rem] pb-[6.25rem] gird place-content-center relative lg:max-w-[1100px] mx-auto"
+		>
+			<!-- bg -->
+			<div class="hidden 2xl:block">
+				<!-- mobile -->
+				<div class="absolute -top-2 left-0 -z-10 lg:hidden">
+					<img src="./assets/images/bg-pattern-top-mobile.svg" alt="" />
+				</div>
+				<div class="absolute bottom-0 right-0 -z-10 w-full lg:hidden">
+					<img src="./assets/images/bg-pattern-bottom-mobile.svg" alt="" />
+				</div>
+
+				<!-- desktop -->
+				<div class="absolute top-0 left-0 -z-10 hidden lg:block">
+					<img src="./assets/images/bg-pattern-top-desktop.svg" alt="" />
+				</div>
+				<div class="absolute bottom-0 right-0 -z-10 hidden lg:block">
+					<img src="./assets/images/bg-pattern-bottom-desktop.svg" alt="" />
+				</div>
+			</div>
+
+			<!--  -->
+			<div class="lg:flex lg:items-center lg:justify-between space-y-[2.5rem] lg:space-y-0">
+				<header class="text-center lg:text-start lg:pr-[9.75rem]">
+					<h1
+						class="mb-[1.3125rem] px-[2.5rem] text-VeryDarkMagenta font-bold text-[34px] leading-7 lg:px-0 lg:text-[50px] lg:leading-none"
+					>
+						10,000+ of our users love our products.
+					</h1>
+					<p class="text-DarkGrayishMagenta font-medium lg:mb-0 tracking-wide">
+						We only provide great products combined with excellent customer service. See what our satisfied
+						customers are saying about our services.
+					</p>
+				</header>
+
+				<!--  -->
+				<ul
+					class="space-y-4 mb-[3.125rem] lg:w-[33.75rem] lg:flex lg:flex-col lg:m-0 lg:space-y-0 lg:gap-[1.125rem] flex-shrink-0"
+				>
+					<li
+						class="grid place-content-center gap-3 py-3 bg-LightGrayishMagenta rounded-lg lg:flex lg:items-center lg:gap-[1.5625rem] lg:w-[27.875rem]"
+					>
+						<div class="flex justify-center gap-2">
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+						</div>
+						<div class="font-bold text-VeryDarkMagenta">Rated 5 Stars in Reviews</div>
+					</li>
+
+					<li
+						class="grid place-content-center gap-3 py-3 bg-LightGrayishMagenta rounded-lg lg:flex lg:items-center lg:self-center lg:gap-[1.5625rem] lg:w-[27.875rem]"
+					>
+						<div class="flex justify-center gap-2">
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+						</div>
+						<div class="font-bold text-VeryDarkMagenta">Rated 5 Stars in Report Guru</div>
+					</li>
+					<li
+						class="grid place-content-center gap-3 py-3 bg-LightGrayishMagenta rounded-lg lg:flex lg:items-center lg:self-end lg:gap-[1.5625rem] lg:w-[27.875rem]"
+					>
+						<div class="flex justify-center gap-2">
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+							<img src="./assets/images/icon-star.svg" alt="" />
+						</div>
+						<div class="font-bold text-VeryDarkMagenta">Rated 5 Stars in BestTech</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--  -->
+			<ul
+				class="space-y-4 lg:grid lg:grid-cols-3 lg:space-y-0 lg:min-h-[266px] lg:gap-[1.875rem] lg:mt-[4.5rem] mt-[3.125rem]"
+			>
+				<li
+					class="bg-VeryDarkMagenta rounded-lg overflow-hidden text-white lg:place-self-start pl-[1.875rem] pr-8 pt-10 pb-[1.875rem] lg:pr-[2.625rem]"
+				>
+					<div class="flex items-center gap-[1.25rem] mb-[1.625rem]">
+						<img
+							src="./assets/images/image-colton.jpg"
+							alt="Colton Smith"
+							class="w-[2.5rem] rounded-full"
+						/>
+
+						<div class="text-[.875rem]">
+							<div class="font-medium">Colton Smith</div>
+							<div class="text-SoftPink">Verified Buyer</div>
+						</div>
+					</div>
+
+					<p class="tracking-wider lg:tracking-normal">
+						" We needed the same printed design as the one we had ordered a week prior. Not only did they
+						find the original order, but we also received it in time. Excellent! "
+					</p>
+				</li>
+
+				<!--  -->
+				<li
+					class="bg-VeryDarkMagenta rounded-lg overflow-hidden text-white lg:place-self-center pl-[1.875rem] pr-8 pt-10 pb-[1.875rem] lg:pr-[2.625rem]"
+				>
+					<div class="flex items-center gap-[1.25rem] mb-[1.625rem]">
+						<img src="./assets/images/image-irene.jpg" alt="Colton Smith" class="w-[2.5rem] rounded-full" />
+
+						<div class="text-[.875rem]">
+							<div class="font-medium">Irene Roberts</div>
+							<div class="text-SoftPink">Verified Buyer</div>
+						</div>
+					</div>
+
+					<p class="tracking-wider lg:tracking-normal">
+						" Customer service is always excellent and very quick turn around. Completely delighted with the
+						simplicity of the purchase and the speed of delivery. "
+					</p>
+				</li>
+
+				<!--  -->
+				<li
+					class="bg-VeryDarkMagenta rounded-lg overflow-hidden text-white lg:place-self-end pl-[1.875rem] pr-8 pt-10 pb-[1.875rem] lg:pr-[2.625rem]"
+				>
+					<div class="flex items-center gap-[1.25rem] mb-[1.625rem]">
+						<img src="./assets/images/image-anne.jpg" alt="Colton Smith" class="w-[2.5rem] rounded-full" />
+
+						<div class="text-[.875rem]">
+							<div class="font-medium">Anne Wallace</div>
+							<div class="text-SoftPink">Verified Buyer</div>
+						</div>
+					</div>
+
+					<p class="tracking-wider lg:tracking-normal">
+						" Put an order with this company and can only praise them for the very high standard. Will
+						definitely use them again and recommend them to everyone! "
+					</p>
+				</li>
+			</ul>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>

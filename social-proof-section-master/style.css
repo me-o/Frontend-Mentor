@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* League Spartan */
+	@font-face {
+		font-family: 'League Spartan';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/League_Spartan/static/LeagueSpartan-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'League Spartan';
+		font-style: normal;
+		font-weight: 500;
+		src: url('./assets/fonts/League_Spartan/static/LeagueSpartan-Medium.ttf');
+	}
+
+	@font-face {
+		font-family: 'League Spartan';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/League_Spartan/static/LeagueSpartan-Bold.ttf');
+	}
+}
