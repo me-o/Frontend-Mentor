@@ -22,4 +22,5 @@
 -   [x] [order-summary-component-main](https://order-summary-component-main-kappa-two.vercel.app)
 -   [x] [stats-preview-card-component-main](https://stats-preview-card-component-main-inky.vercel.app)
 -   [x] [3-column-preview-card-component-main](https://3-column-preview-card-component-main-eta-seven.vercel.app)
--   [x] [profile-card-component-main]()
+-   [x] [profile-card-component-main](https://profile-card-component-main-umber.vercel.app)
+-   [x] [social-proof-section-master]()
