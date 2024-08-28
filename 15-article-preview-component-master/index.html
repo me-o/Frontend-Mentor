@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Article preview component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Manrope: ['Manrope', 'sans-serif'],
+						},
+						colors: {
+							VeryDarkGrayishBlue: 'hsl(217, 19%, 35%)',
+							DesaturatedDarkBlue: 'hsl(214, 17%, 51%)',
+							GrayishBlue: 'hsl(212, 23%, 69%)',
+							LightGrayishBlue: 'hsl(210, 46%, 95%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="grid place-content-center min-h-screen bg-LightGrayishBlue">
+		<main
+			class="max-w-[327px] drop-shadow-lg shadow-LightGrayishBlue rounded-lg bg-white font-Manrope lg:max-w-[730px] lg:flex overflow-hidden lg:overflow-visible"
+		>
+			<header>
+				<div class="h-[200px] overflow-hidden lg:h-full lg:w-[285px] lg:rounded-l-lg">
+					<img src="./assets/images/drawers.jpg" alt="" class="w-full h-full object-cover object-left" />
+				</div>
+			</header>
+
+			<div class="">
+				<!-- content -->
+				<div class="px-8 pt-9 pb-[1.625rem] space-y-4 lg:pl-10 lg:pr-12 lg:pb-[1.125rem]">
+					<h1 class="font-bold lg:text-[20px] text-VeryDarkGrayishBlue">
+						Shift the overall look and feel by adding these wonderful touches to furniture in your home
+					</h1>
+					<p class="text-DesaturatedDarkBlue text-[13px]">
+						Ever been in a room and felt like <span class="lg:hidden">&ensp;</span> something was missing?
+						Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any
+						room feel complete.
+					</p>
+				</div>
+
+				<!-- author -->
+				<div class="flex items-center px-8 pt-1 pb-5 relative lg:px-10 lg:pb-8 lg:pt-0">
+					<!-- avatar -->
+					<div class="w-[40px] aspect-square rounded-full overflow-hidden">
+						<img
+							src="./assets/images/avatar-michelle.jpg"
+							alt="avatar-michelle"
+							class="w-full h-full object-cover object-center"
+						/>
+					</div>
+
+					<!-- name -->
+					<div class="ml-4 text-[13px]">
+						<div class="font-bold">Michelle Appleton</div>
+						<div class="text-GrayishBlue">28 Jun 2020</div>
+					</div>
+
+					<!-- desktop icon share -->
+					<div class="ml-auto relative hidden lg:block">
+						<button
+							class="p-2 rounded-full aspect-square bg-LightGrayishBlue text-DesaturatedDarkBlue peer hover:bg-DesaturatedDarkBlue hover:text-white transition-all duration-300"
+						>
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+								<path
+									fill="currentColor"
+									d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+								/>
+							</svg>
+						</button>
+
+						<!-- desktop action buttons -->
+						<div
+							class="items-center gap-5 bg-VeryDarkGrayishBlue absolute -top-7 left-[50%] -translate-y-full -translate-x-[50%] z-10 px-9 py-4 rounded-lg drop-shadow-lg hidden lg:peer-hover:flex after:w-[22px] after:h-3 after:bg-VeryDarkGrayishBlue after:absolute after:bottom-0 after:left-[50%] after:-translate-x-[50%] after:translate-y-3 after:[clip-path:polygon(50%_100%,_0_0,_100%_0)]"
+						>
+							<div class="uppercase tracking-[0.4em] text-[13px] text-GrayishBlue">share</div>
+
+							<ul class="flex items-center gap-4 *:w-5 *:grid *:place-content-center">
+								<li>
+									<button>
+										<img src="./assets/images/icon-facebook.svg" alt="icon-facebook" />
+									</button>
+								</li>
+								<li>
+									<button>
+										<img src="./assets/images/icon-twitter.svg" alt="icon-twitter" />
+									</button>
+								</li>
+								<li>
+									<button>
+										<img src="./assets/images/icon-pinterest.svg" alt="icon-pinterest" />
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- mobile icon share -->
+					<button
+						class="ml-auto p-2 rounded-full aspect-square bg-LightGrayishBlue text-DesaturatedDarkBlue peer lg:hidden"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+							<path
+								fill="currentColor"
+								d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+							/>
+						</svg>
+					</button>
+
+					<!-- mobile action buttons -->
+					<div
+						class="w-full h-full bg-VeryDarkGrayishBlue absolute left-0 top-0 hidden peer-focus:flex px-8 items-center"
+					>
+						<div class="uppercase tracking-[0.4em] text-[13px] text-GrayishBlue">share</div>
+						<ul class="ml-5 flex items-center gap-4">
+							<li class="grid place-content-center">
+								<button class="">
+									<img src="./assets/images/icon-facebook.svg" alt="icon-facebook" />
+								</button>
+							</li>
+							<li class="grid place-content-center">
+								<button class="">
+									<img src="./assets/images/icon-twitter.svg" alt="icon-twitter" />
+								</button>
+							</li>
+							<li class="grid place-content-center">
+								<button class="">
+									<img src="./assets/images/icon-pinterest.svg" alt="icon-pinterest" />
+								</button>
+							</li>
+						</ul>
+
+						<!-- icon -->
+						<button class="ml-auto p-2 rounded-full aspect-square bg-GrayishBlue text-white">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+								<path
+									fill="currentColor"
+									d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
