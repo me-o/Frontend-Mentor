@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Four card feature section</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Poppins: ['Poppins', 'sans-serif'],
+						},
+						colors: {
+							Red: 'hsl(0, 78%, 62%)',
+							Cyan: 'hsl(180, 62%, 55%)',
+							Orange: 'hsl(34, 97%, 64%)',
+							Blue: 'hsl(212, 86%, 64%)',
+							VeryDarkBlue: 'hsl(234, 12%, 34%)',
+							GrayishBlue: 'hsl(229, 6%, 66%)',
+							VeryLightGray: 'hsl(0, 0%, 98%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="font-Poppins bg-VeryLightGray pt-[88px] px-8 pb-[78px] desktop:px-0 desktop:pb-0">
+		<header class="text-center mb-[72px]">
+			<h1 class="font-extralight text-[1.5rem] text-GrayishBlue">Reliable, efficient delivery</h1>
+			<h2 class="font-semibold text-[1.5rem] mb-4 text-VeryDarkBlue">Powered by Technology</h2>
+			<p class="text-[15px] text-GrayishBlue mobile:max-w-[512px] mx-auto">
+				Our Artificial Intelligence powered tools use millions of project data points to ensure that your
+				project is successful
+			</p>
+		</header>
+
+		<main>
+			<ul
+				class="grid grid-flow-row gap-[1.5625rem] lg:grid-cols-3 max-w-[1110px] mx-auto *:drop-shadow-xl *:bg-white *:pt-8 *:pb-7 *:pl-[1.625rem] *:pr-7 *:rounded-lg *:overflow-hidden *:min-h-[222px] *:relative *:flex *:flex-col *:before:h-1 *:before:w-full *:before:absolute *:before:top-0 *:before:left-0 *:mobile:max-w-[350px] *:mobile:mx-auto"
+			>
+				<li class="before:bg-Cyan lg:row-span-2 lg:place-self-center">
+					<div class="text-[21px] font-semibold leading-none mb-2 text-VeryDarkBlue">Supervisor</div>
+					<p class="text-GrayishBlue text-[14px] leading-6">
+						Monitors activity to identify project roadblocks
+					</p>
+					<div class="w-[57px] ml-auto mt-auto">
+						<img
+							src="./assets/images/icon-supervisor.svg"
+							alt="icon-supervisor"
+							class="w-full object-cover"
+						/>
+					</div>
+				</li>
+				<li class="before:bg-Red">
+					<div class="text-[21px] font-semibold leading-none mb-2 text-VeryDarkBlue">Team Builder</div>
+					<p class="text-GrayishBlue text-[14px] leading-6">
+						Scans our talent network to create the optimal team for your project
+					</p>
+					<div class="w-[57px] ml-auto mt-auto">
+						<img
+							src="./assets/images/icon-team-builder.svg"
+							alt="icon-team-builder"
+							class="w-full object-cover"
+						/>
+					</div>
+				</li>
+
+				<li class="before:bg-Orange lg:col-start-2">
+					<div class="text-[21px] font-semibold leading-none mb-2 text-VeryDarkBlue">Karma</div>
+					<p class="text-GrayishBlue text-[14px] leading-6">
+						Regularly evaluates our talent to ensure quality
+					</p>
+					<div class="w-[57px] ml-auto mt-auto">
+						<img src="./assets/images/icon-karma.svg" alt="icon-karma" class="w-full object-cover" />
+					</div>
+				</li>
+
+				<li class="before:bg-Blue lg:col-start-3 lg:row-start-1 lg:row-span-2 lg:place-self-center">
+					<div class="text-[21px] font-semibold leading-none mb-2 text-VeryDarkBlue">Calculator</div>
+					<p class="text-GrayishBlue text-[14px] leading-6">
+						Uses data from past projects to provide better delivery estimates
+					</p>
+					<div class="w-[57px] ml-auto mt-auto">
+						<img
+							src="./assets/images/icon-calculator.svg"
+							alt="icon-calculator"
+							class="w-full object-cover"
+						/>
+					</div>
+				</li>
+			</ul>
+		</main>
+
+		<!-- <footer>
+			<p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</p>
+		</footer> -->
+	</body>
+</html>
