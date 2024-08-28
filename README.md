@@ -23,4 +23,5 @@
 -   [x] [stats-preview-card-component-main](https://stats-preview-card-component-main-inky.vercel.app)
 -   [x] [3-column-preview-card-component-main](https://3-column-preview-card-component-main-eta-seven.vercel.app)
 -   [x] [profile-card-component-main](https://profile-card-component-main-umber.vercel.app)
--   [x] [social-proof-section-master]()
+-   [x] [social-proof-section-master](https://social-proof-section-master-sigma-ivory.vercel.app)
+-   [x] [article-preview-component-master]()
