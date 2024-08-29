@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Base Apparel coming soon page</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							JosefinSans: ['Josefin Sans', 'sans-serif'],
+						},
+						colors: {
+							DesaturatedRed: 'hsl(0, 36%, 70%)',
+							SoftRed: 'hsl(0, 93%, 68%)',
+							DarkGrayishRed: 'hsl(0, 6%, 24%)',
+						},
+						backgroundImage: {
+							'gradient-to-135-white': 'linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))',
+							'gradient-to-135-pink': 'linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-gradient-to-135-white h-fit min-h-screen grid place-content-center">
+		<main
+			class="w-screen min-h-screen desktop:min-h-0 max-w-screen-desktop desktop:max-h-[800px] font-JosefinSans grid grid-rows-[auto_auto_1fr] desktop:grid-cols-[1fr_auto] desktop:grid-rows-[auto_1fr]"
+		>
+			<header>
+				<div
+					class="ml-8 my-[1.875rem] w-[6.25rem] md:w-[10.25rem] desktop:ml-[164px] desktop:mt-[66px] desktop:mb-0"
+				>
+					<img src="./assets/images/logo.svg" alt="logo" />
+				</div>
+			</header>
+
+			<div class="w-full min-h-[250px] desktop:row-span-2 desktop:max-w-[610px]">
+				<img
+					src="./assets/images/hero-mobile.jpg"
+					alt=""
+					class="w-full h-full object-cover object-top desktop:hidden"
+				/>
+				<img
+					src="./assets/images/hero-desktop.jpg"
+					alt=""
+					class="w-full h-full hidden desktop:block object-center object-contain"
+				/>
+			</div>
+
+			<div
+				class="mt-16 mb-[5.75rem] px-8 text-center grid place-content-center desktop:text-start desktop:py-0 desktop:pr-[218px] desktop:pl-[164px] desktop:m-0 desktop:place-content-start desktop:pt-[128px] relative"
+			>
+				<!-- desktop background image -->
+				<div class="absolute bottom-0 left-0 w-full -z-10 invisible desktop:visible">
+					<img src="./assets/images/bg-pattern-desktop.svg" alt="" />
+				</div>
+
+				<div
+					class="uppercase font-bold text-[2.5rem] tracking-[0.3em] mb-[1.375rem] text-DarkGrayishRed desktop:text-[60px] leading-[1.2em]"
+				>
+					<h2 class="font-light text-DesaturatedRed">We're</h2>
+					<h2>coming</h2>
+					<h2>soon</h2>
+				</div>
+
+				<p
+					class="text-[.875rem] mb-[1.625rem] text-DesaturatedRed leading-6 max-w-[445px] desktop:text-[1rem] desktop:leading-8 desktop:mb-[45px] break-keep"
+				>
+					Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+					up-to-date with announcements and our launch deals.
+				</p>
+
+				<form action="" class="relative w-full max-w-[445px] mx-auto">
+					<input
+						type="email"
+						class="border-2 border-DesaturatedRed/30 w-full rounded-full pl-6 pr-20 leading-[3rem] bg-transparent text-[14px] text-DesaturatedRed placeholder:text-DesaturatedRed/40 focus:outline-none invalid:border-SoftRed peer desktop:leading-[54px] desktop:text-[1rem] desktop:placeholder:text-[1rem] desktop:pr-[110px]"
+						placeholder="Email Address"
+					/>
+					<p
+						class="invisible peer-invalid:visible text-SoftRed text-[12px] text-start mt-2 pl-6 desktop:text-[14px]"
+					>
+						Please provide a valid email
+					</p>
+
+					<button
+						class="bg-gradient-to-135-pink w-16 h-[52px] grid place-content-center absolute top-0 right-0 rounded-full shadow-[0px_12px_20px_0.5px_hsl(0,80%,86%)] border-none desktop:w-[100px] desktop:h-[56px]"
+					>
+						<img src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
+					</button>
+				</form>
+			</div>
+		</main>
+
+		<!-- <footer>
+			<p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</p>
+		</footer> -->
+	</body>
+</html>

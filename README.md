@@ -26,3 +26,4 @@
 -   [x] [social-proof-section-master](https://social-proof-section-master-sigma-ivory.vercel.app)
 -   [x] [article-preview-component-master](https://article-preview-component-master-two-pi.vercel.app)
 -   [x] [four-card-feature-section-master](https://four-card-feature-section-master-nine-xi.vercel.app)
+-   [x] [base-apparel-coming-soon-master]()
