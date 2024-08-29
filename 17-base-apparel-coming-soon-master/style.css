@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Josefin Sans */
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 300;
+		src: url('./assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+	}
+
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 600;
+		src: url('./assets/fonts/Josefin_Sans/static/JosefinSans-SemiBold.ttf');
+	}
+}
