@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Intro component with sign up form</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Poppins: ['Poppins', 'sans-serif'],
+						},
+						colors: {
+							Red: 'hsl(0, 100%, 74%)',
+							Green: 'hsl(154, 59%, 51%)',
+							Blue: 'hsl(248, 32%, 49%)',
+							DarkBlue: 'hsl(249, 10%, 26%)',
+							GrayishBlue: 'hsl(246, 25%, 77%)',
+						},
+						backgroundImage: {
+							'mobile-bg': "url('./assets/images/bg-intro-mobile.png')",
+							'desktop-bg': "url('./assets/images/bg-intro-desktop.png')",
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-Red bg-mobile-bg lg:bg-desktop-bg grid place-content-center">
+		<main
+			class="min-h-screen pt-[6rem] pb-[4.375rem] font-Poppins lg:grid lg:grid-cols-[1fr_auto] lg:place-content-center lg:place-items-center lg:max-w-[1118px] lg:p-0"
+		>
+			<header class="text-center text-white space-y-6 mb-[4.0625rem] desktop:text-start">
+				<h1
+					class="px-[3.875rem] font-bold text-[26px] leading-[1.3] desktop:pl-0 desktop:pr-[9.625rem] lg:text-[48px] lg:mt-14"
+				>
+					Learn to code by watching others
+				</h1>
+				<p class="px-[1.5rem] leading-[1.6] desktop:p-0 desktop:pr-[72px]">
+					See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+					but understanding how developers think is invaluable.
+				</p>
+			</header>
+
+			<div class="p-6 pt-0 space-y-6 desktop:p-0 lg:max-w-[540px]">
+				<!-- try button -->
+				<button
+					class="bg-Blue rounded-lg overflow-hidden text-center py-4 px-[4.625rem] shadow-[0_8px_0_0_rgb(0_0_0_/_0.15)] w-full text-GrayishBlue"
+				>
+					<span class="font-semibold leading-loose text-white">Try it free 7 days</span>
+					then $20/mo. thereafter
+				</button>
+
+				<!-- form -->
+				<form
+					action=""
+					class="bg-white rounded-lg overflow-hidden flex flex-col p-6 pb-7 space-y-4 shadow-[0_8px_0_0_rgb(0_0_0_/_0.15)] lg:p-[2.5rem] lg:space-y-5"
+				>
+					<label for="firstName" class="relative">
+						<input
+							required
+							type="text"
+							placeholder="First Name"
+							id="firstName"
+							class="w-full placeholder:font-medium text-DarkBlue border-2 leading-[3.5rem] rounded-md overflow-hidden px-4 lg:pl-[28px] pr-[70px] outline-none focus:border-DarkBlue focus:invalid:border-Red focus:invalid:placeholder:invisible peer relative"
+						/>
+
+						<div
+							class="absolute right-[1.5rem] top-[30px] -translate-y-[50%] opacity-0 peer-focus:peer-invalid:opacity-100 transition-all duration-200"
+						>
+							<img src="./assets/images/icon-error.svg" alt="" />
+						</div>
+
+						<p class="text-[12px] text-end my-2 italic text-Red hidden peer-focus:peer-invalid:block">
+							First Name cannot be empty
+						</p>
+					</label>
+
+					<label for="lastName" class="relative">
+						<input
+							required
+							type="text"
+							placeholder="Last Name"
+							id="lastName"
+							class="w-full placeholder:font-medium text-DarkBlue border-2 leading-[3.5rem] rounded-md overflow-hidden px-4 lg:pl-[28px] pr-[70px] outline-none focus:border-DarkBlue focus:invalid:border-Red focus:invalid:placeholder:invisible peer relative"
+						/>
+
+						<div
+							class="absolute right-[1.5rem] top-[30px] -translate-y-[50%] opacity-0 peer-focus:peer-invalid:opacity-100 transition-all duration-200"
+						>
+							<img src="./assets/images/icon-error.svg" alt="" />
+						</div>
+
+						<p class="text-[12px] text-end my-2 italic text-Red hidden peer-focus:peer-invalid:block">
+							Last Name cannot be empty
+						</p>
+					</label>
+
+					<label for="email" class="relative">
+						<input
+							required
+							type="email"
+							placeholder="Email Address"
+							id="email"
+							class="w-full placeholder:font-medium text-DarkBlue border-2 leading-[3.5rem] rounded-md overflow-hidden px-4 lg:pl-[28px] pr-[70px] outline-none focus:border-DarkBlue focus:invalid:border-Red focus:invalid:placeholder:invisible peer relative focus:invalid:text-Red"
+						/>
+
+						<div
+							class="absolute right-[1.5rem] top-[30px] -translate-y-[50%] opacity-0 peer-focus:peer-invalid:opacity-100 transition-all duration-200"
+						>
+							<img src="./assets/images/icon-error.svg" alt="" />
+						</div>
+
+						<p class="text-[12px] text-end my-2 italic text-Red hidden peer-focus:peer-invalid:block">
+							Looks like this is not an email
+						</p>
+					</label>
+
+					<label for="password" class="relative">
+						<input
+							required
+							type="password"
+							placeholder="Password"
+							id="password"
+							class="w-full placeholder:font-medium text-DarkBlue border-2 leading-[3.5rem] rounded-md overflow-hidden px-4 lg:pl-[28px] pr-[70px] outline-none focus:border-DarkBlue focus:invalid:border-Red focus:invalid:placeholder:invisible peer relative"
+						/>
+
+						<div
+							class="absolute right-[1.5rem] top-[30px] -translate-y-[50%] opacity-0 peer-focus:peer-invalid:opacity-100 transition-all duration-200"
+						>
+							<img src="./assets/images/icon-error.svg" alt="" />
+						</div>
+
+						<p class="text-[12px] text-end my-2 italic text-Red hidden peer-focus:peer-invalid:block">
+							Password cannot be empty
+						</p>
+					</label>
+
+					<button
+						class="bg-Green text-white uppercase rounded-md leading-[3.5rem] font-medium shadow-[inset_0_-4px_0_0_rgb(0_0_0_/_0.15)]"
+					>
+						Claim your free trial
+					</button>
+
+					<p class="text-center text-[12px] !mt-3 mx-5 text-GrayishBlue leading-loose">
+						By clicking the button, you are agreeing to our
+						<span class="text-Red font-bold">Terms and Services</span>
+					</p>
+				</form>
+			</div>
+		</main>
+
+		<!-- <footer>
+			<p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</p>
+		</footer> -->
+	</body>
+</html>
