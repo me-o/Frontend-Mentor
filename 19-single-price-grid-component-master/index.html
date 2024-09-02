@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Single Price Grid Component</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							Karla: ['Karla', 'sans-serif'],
+						},
+						colors: {
+							Cyan: 'hsl(179, 62%, 43%)',
+							BrightYellow: 'hsl(71, 73%, 54%)',
+							LightGray: 'hsl(204, 43%, 93%)',
+							GrayishBlue: 'hsl(218, 22%, 67%)',
+						},
+						screens: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+						minWidth: {
+							mobile: '375px',
+							desktop: '1440px',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="min-h-screen grid place-content-center bg-LightGray font-Karla">
+		<main class="max-w-[310px] rounded-lg overflow-hidden md:max-w-[636px] md:grid md:grid-cols-2">
+			<!-- Join our community -->
+			<div
+				class="bg-white px-6 pt-7 pb-6 md:col-span-2 md:pt-[2.75rem] md:pr-[4.875rem] md:pb-[2.125rem] md:pl-[2.5rem]"
+			>
+				<h2 class="text-Cyan mb-[1.625rem] text-[22px] font-bold md:mb-[1.5rem]">Join our community</h2>
+				<h3 class="text-BrightYellow mb-5 font-bold md:mb-[.875rem]">
+					30-day, hassle-free money back guarantee
+				</h3>
+				<p class="text-GrayishBlue text-[14px] leading-loose">
+					Gain access to our full library of tutorials along with expert code reviews. Perfect for any
+					developers who are serious about honing their skills.
+				</p>
+			</div>
+
+			<!-- Monthly Subscription -->
+			<div class="bg-Cyan text-white p-6 overflow-hidden md:p-[2.5rem]">
+				<h2 class="mb-5 font-bold text-[18px] md:mb-[1.125rem]">Monthly Subscription</h2>
+				<div class="mb-2 text-LightGray/60 flex items-center gap-3 text-[14px]">
+					<span class="font-bold text-[36px] text-white">&dollar;29</span>
+					<span>per month</span>
+				</div>
+				<div class="mb-7 md:mb-[1.875rem]">Full access for less than &dollar;1 a day</div>
+				<button class="bg-BrightYellow leading-[50px] w-full rounded-lg text-[14px] drop-shadow-2xl">
+					Sign Up
+				</button>
+			</div>
+
+			<!-- Why Us -->
+			<div class="bg-Cyan/80 text-LightGray/80 px-6 pt-[1.625rem] pb-[1.125rem] text-[14px] md:p-[2.5rem]">
+				<h2 class="text-white mb-[1rem] font-bold text-[1.25rem]">Why Us</h2>
+				<ul>
+					<li>Tutorials by industry experts</li>
+					<li>Peer &amp; expert code review</li>
+					<li>Coding exercises</li>
+					<li>Access to our GitHub repos</li>
+					<li>Community forum</li>
+					<li>Flashcard decks</li>
+					<li>New videos every week</li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- <footer>
+			<p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</p>
+		</footer> -->
+	</body>
+</html>

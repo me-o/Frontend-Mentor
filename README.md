@@ -27,4 +27,4 @@
 -   [x] [article-preview-component-master](https://article-preview-component-master-two-pi.vercel.app)
 -   [x] [four-card-feature-section-master](https://four-card-feature-section-master-nine-xi.vercel.app)
 -   [x] [base-apparel-coming-soon-master](https://base-apparel-coming-soon-master-psi-ten.vercel.app)
--   [x] [intro-component-with-signup-form-master]()
+-   [x] [intro-component-with-signup-form-master](https://intro-component-with-signup-form-master-topaz.vercel.app)

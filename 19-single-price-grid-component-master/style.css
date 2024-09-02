@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Karla */
+	@font-face {
+		font-family: 'Karla';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/Karla/static/Karla-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Karla';
+		font-style: normal;
+		font-weight: 700;
+		src: url('./assets/fonts/Karla/static/Karla-Bold.ttf');
+	}
+}
