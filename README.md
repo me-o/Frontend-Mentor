@@ -29,4 +29,5 @@
 -   [x] [base-apparel-coming-soon-master](https://base-apparel-coming-soon-master-psi-ten.vercel.app)
 -   [x] [intro-component-with-signup-form-master](https://intro-component-with-signup-form-master-topaz.vercel.app)
 -   [x] [single-price-grid-component-master](https://single-price-grid-component-master-dun-tau.vercel.app)
--   [x] [ping-coming-soon-page-master]()
+-   [x] [ping-coming-soon-page-master](https://ping-coming-soon-page-master-rho.vercel.app)
+-   [x] [huddle-landing-page-with-single-introductory-section-master]()
